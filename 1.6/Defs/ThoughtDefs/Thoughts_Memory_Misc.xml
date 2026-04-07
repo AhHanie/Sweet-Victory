@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>DefeatedRaid</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <durationDays>3</durationDays>
+    <stackLimit>5</stackLimit>
+    <stages>
+      <li>
+        <label>defeated raid</label>
+        <description>We broke their attack and sent the survivors running.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>
