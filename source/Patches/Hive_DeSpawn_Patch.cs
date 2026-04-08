@@ -19,10 +19,7 @@ namespace Sweet_Victory.Patches
                 return;
             }
 
-            if (VictoryEffectUtility.HasFreeColonists(__state))
-            {
-                VictoryEffectUtility.PlayDefeatSound(__state);
-            }
+            VictoryEffectUtility.PlayDefeatSound(__state);
         }
     }
 }

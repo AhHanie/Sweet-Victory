@@ -7,7 +7,7 @@
         <li>1.6</li>
     </supportedVersions>
     <description>Plays the mech cluster defeated sound effect when a raid or an insect hive is defeated. Also, adds a mood buff for defeating raids.</description>
-    <modVersion>1.0.0</modVersion>
+    <modVersion>1.1.0</modVersion>
     <url>https://steamcommunity.com/sharedfiles/filedetails/?id=3702100325</url>
     <modDependencies>
         <li>
