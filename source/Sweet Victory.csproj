@@ -65,9 +65,10 @@
     <Compile Include="ModSettings.cs" />
     <Compile Include="ModSettingsWindow.cs" />
     <Compile Include="RaidVictoryTrackerMapComponent.cs" />
+    <Compile Include="SweetVictoryBuildingDefOf.cs" />
     <Compile Include="SweetVictoryThoughtDefOf.cs" />
     <Compile Include="VictoryEffectUtility.cs" />
-    <Compile Include="Patches\Building_FungoidShip_Destroy_Patch.cs" />
+    <Compile Include="Patches\Thing_Destroy_Patch.cs" />
     <Compile Include="Patches\Hive_DeSpawn_Patch.cs" />
     <Compile Include="Patches\LordManager_RemoveLord_Patch.cs" />
     <Compile Include="Patches\RaidStrategyWorker_MakeLords_Patch.cs" />

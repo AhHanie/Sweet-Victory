@@ -4,13 +4,13 @@
     <defName>SweetVictory_DefeatedFungoidShip</defName>
     <icon>Things/Mote/ThoughtSymbol/Skull</icon>
     <showBubble>true</showBubble>
-    <durationDays>3</durationDays>
+    <durationDays>10</durationDays>
     <stackLimit>5</stackLimit>
     <stages>
       <li>
         <label>defeated fungoid ship</label>
         <description>We destroyed an ancient ship part, a ruined fragment of an old space exploration craft. It had likely carried immortal fungoids for centuries, twisted experimental beings who lost their sense of self in the dark long ago.</description>
-        <baseMoodEffect>2</baseMoodEffect>
+        <baseMoodEffect>4</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
