@@ -62,8 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Mod.cs" />
-    <Compile Include="ModSettings.cs" />
-    <Compile Include="ModSettingsWindow.cs" />
     <Compile Include="RaidVictoryTrackerMapComponent.cs" />
     <Compile Include="SweetVictoryBuildingDefOf.cs" />
     <Compile Include="SweetVictoryThoughtDefOf.cs" />

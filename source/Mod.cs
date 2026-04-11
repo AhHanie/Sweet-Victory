@@ -20,16 +20,5 @@ namespace Sweet_Victory
         {
             new Harmony("sk.sweetvictory").PatchAll();
         }
-
-        public override string SettingsCategory()
-        {
-            return "SweetVictory.SettingsTitle".Translate();
-        }
-
-        public override void DoSettingsWindowContents(Rect inRect)
-        {
-            ModSettingsWindow.Draw(inRect);
-            base.DoSettingsWindowContents(inRect);
-        }
     }
 }

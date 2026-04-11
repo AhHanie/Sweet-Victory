@@ -4,13 +4,13 @@
     <defName>SweetVictory_DefeatedRaid</defName>
     <icon>Things/Mote/ThoughtSymbol/Skull</icon>
     <showBubble>true</showBubble>
-    <durationDays>10</durationDays>
+    <durationDays>3</durationDays>
     <stackLimit>5</stackLimit>
     <stages>
       <li>
         <label>defeated raid</label>
         <description>We broke their attack and sent the survivors running.</description>
-        <baseMoodEffect>4</baseMoodEffect>
+        <baseMoodEffect>2</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
