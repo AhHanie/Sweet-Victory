@@ -14,4 +14,19 @@
       </li>
     </stages>
   </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SweetVictory_DefeatedAncientDanger</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <durationDays>10</durationDays>
+    <stackLimit>5</stackLimit>
+    <stages>
+      <li>
+        <label>defeated ancient danger</label>
+        <description>We woke the old danger and survived what came out.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>

@@ -8,6 +8,8 @@ namespace Sweet_Victory
     {
         public static ThoughtDef SweetVictory_DefeatedRaid;
 
+        public static ThoughtDef SweetVictory_DefeatedAncientDanger;
+
         [MayRequire("vanillaracesexpanded.fungoid")]
         public static ThoughtDef SweetVictory_DefeatedFungoidShip;
 

@@ -70,6 +70,7 @@
     <Compile Include="Patches\Hive_DeSpawn_Patch.cs" />
     <Compile Include="Patches\LordManager_RemoveLord_Patch.cs" />
     <Compile Include="Patches\RaidStrategyWorker_MakeLords_Patch.cs" />
+    <Compile Include="Patches\AncientDangerThreat_Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

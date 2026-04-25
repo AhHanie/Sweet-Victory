@@ -15,9 +15,19 @@ namespace Sweet_Victory
 
         public static void RewardRaidVictory(Map map)
         {
+            RewardMapPawns(map, SweetVictoryThoughtDefOf.SweetVictory_DefeatedRaid);
+        }
+
+        public static void RewardMapPawns(Map map, ThoughtDef thoughtDef)
+        {
+            if (map == null || thoughtDef == null)
+            {
+                return;
+            }
+
             foreach (Pawn pawn in map.mapPawns.FreeColonistsSpawned)
             {
-                pawn.needs?.mood?.thoughts?.memories?.TryGainMemory(SweetVictoryThoughtDefOf.SweetVictory_DefeatedRaid);
+                pawn.needs?.mood?.thoughts?.memories?.TryGainMemory(thoughtDef);
             }
 
             PlayDefeatSound(map);
