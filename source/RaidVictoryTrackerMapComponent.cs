@@ -205,11 +205,31 @@ namespace Sweet_Victory
 
                 if (activeRaids[i].activeLordLoadIds.Count == 0)
                 {
+                    bool playSound = !activeRaids[i].shouldSuppressVictorySound;
                     activeRaids.RemoveAt(i);
-                    VictoryEffectUtility.RewardRaidVictory(map);
+                    VictoryEffectUtility.RewardRaidVictory(map, playSound);
                 }
 
                 return;
+            }
+        }
+
+        public void NotifyRaidKidnappedColonist(Lord lord)
+        {
+            if (lord == null)
+            {
+                return;
+            }
+
+            RemoveExpiredRaidRecords();
+
+            for (int i = 0; i < activeRaids.Count; i++)
+            {
+                if (activeRaids[i].activeLordLoadIds.Contains(lord.loadID))
+                {
+                    activeRaids[i].shouldSuppressVictorySound = true;
+                    return;
+                }
             }
         }
 
@@ -261,6 +281,7 @@ namespace Sweet_Victory
         public List<int> activeLordLoadIds = new List<int>();
         public ThoughtDef thoughtDef;
         public int registeredTick;
+        public bool shouldSuppressVictorySound;
 
         public bool RemoveLord(int lordLoadId)
         {
@@ -277,6 +298,7 @@ namespace Sweet_Victory
             Scribe_Collections.Look(ref activeLordLoadIds, "activeLordLoadIds", LookMode.Value);
             Scribe_Defs.Look(ref thoughtDef, "thoughtDef");
             Scribe_Values.Look(ref registeredTick, "registeredTick", 0);
+            Scribe_Values.Look(ref shouldSuppressVictorySound, "shouldSuppressVictorySound", defaultValue: false);
 
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {

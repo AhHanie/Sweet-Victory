@@ -13,12 +13,12 @@ namespace Sweet_Victory
             SoundDefOf.MechClusterDefeated.PlayOneShotOnCamera(map);
         }
 
-        public static void RewardRaidVictory(Map map)
+        public static void RewardRaidVictory(Map map, bool playSound = true)
         {
-            RewardMapPawns(map, SweetVictoryThoughtDefOf.SweetVictory_DefeatedRaid);
+            RewardMapPawns(map, SweetVictoryThoughtDefOf.SweetVictory_DefeatedRaid, playSound);
         }
 
-        public static void RewardMapPawns(Map map, ThoughtDef thoughtDef)
+        public static void RewardMapPawns(Map map, ThoughtDef thoughtDef, bool playSound = true)
         {
             if (map == null || thoughtDef == null)
             {
@@ -30,7 +30,10 @@ namespace Sweet_Victory
                 pawn.needs?.mood?.thoughts?.memories?.TryGainMemory(thoughtDef);
             }
 
-            PlayDefeatSound(map);
+            if (playSound)
+            {
+                PlayDefeatSound(map);
+            }
         }
 
         public static List<Pawn> GetMoodMemoryRecipients(Map map)
