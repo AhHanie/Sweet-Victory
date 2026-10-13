@@ -6,4 +6,10 @@
     <li IfModActive="oskarpotocki.vfe.insectoid2">1.6/VREInsectoid</li>
     <li>/</li>
   </v1.6>
+  <v1.7>
+    <li>1.7/Base</li>
+    <li IfModActive="vanillaracesexpanded.fungoid">1.7/VREFungoid</li>
+    <li IfModActive="oskarpotocki.vfe.insectoid2">1.7/VREInsectoid</li>
+    <li>/</li>
+  </v1.7>
 </loadFolders>
